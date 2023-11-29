@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<body>
+<h2 style="color: red">
+Hola mundo
+</h2>
+<p>
+el nombre es: {{nombre}}, {{apellido}}
+</p>
+<p>
+Lo estas viendo a la fecha: {{fecha.day}} / {{fecha.month}}  / {{fecha.year}}
+</p>
+<p>
+
+    
+{% if temas %}
+<strong>Los temas a tratar son:</strong>
+<ul>
+    {% for tema in temas%}
+        <li>{{tema}}</li>
+    {% endfor %}
+</ul>
+{%else %}
+    <p>No hay nada que mostrar</p>
+{% endif %}   
+    
+
+</p>
+</body>
+
